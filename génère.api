@@ -1,0 +1,9 @@
+import json
+produits = [
+  {"id": 1, "nom": "Plaquettes frein Clio 4", "prix": 85, "stock": 24, "image": "images/p1.jpg"},
+  {"id": 2, "nom": "Filtre à huile 1.5 DCI", "prix": 18, "stock": 50, "image": "images/p2.jpg"},
+  {"id": 3, "nom": "Batterie Bosch 70Ah", "prix": 295, "stock": 8, "image": "images/p3.jpg"}
+]
+with open('produits.json','w',encoding='utf-8') as f:
+    json.dump(produits,f,ensure_ascii=False,indent=2)
+print("produits.json généré avec succès!")
